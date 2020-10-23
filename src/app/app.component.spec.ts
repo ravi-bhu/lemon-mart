@@ -26,8 +26,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('div h1').textContent).toContain(
-      'Lemon Mart'
+    expect(compiled.querySelector('.mat-h2').textContent).toContain(
+      'LemonMart'
     );
   });
 });

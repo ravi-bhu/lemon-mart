@@ -1,3 +1,26 @@
-<div fxLayoutAlign="center center">
-  <h1>Lemon Mart</h1>
-</div>
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <a mat-button routerLink="/home">
+    <mat-icon svgIcon="lemon"></mat-icon>&nbsp;
+    <span class="mat-h2">LemonMart</span>
+  </a>
+  <span fxFlex></span>
+  <div fxLayoutGap="1em">
+    <button mat-mini-fab routerLink="/inventory" matTooltip="Inventory" aria-label="Inventory">
+      <mat-icon>list</mat-icon>
+    </button>
+    <button mat-mini-fab routerLink="/pos" matTooltip="POS" aria-label="POS">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <button mat-mini-fab routerLink="/user/profile" matTooltip="Profile" aria-label="user-profile">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <button mat-mini-fab routerLink="/user/logout" matTooltip="Logout" aria-label="Logout">
+      <mat-icon>lock_open</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>
